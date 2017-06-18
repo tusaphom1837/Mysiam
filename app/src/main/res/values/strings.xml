@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">My siam</string>
-    <string name="title">Doremon</string>
+    <string name="title">Siam University</string>
     <string name="login">Login</string>
+    <string name="user">user</string>
+    <string name="password">password</string>
 </resources>

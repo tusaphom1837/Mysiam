@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="H1">40sp</dimen>
-    <dimen name="H2">20sp</dimen>
-    <dimen name="padding">10sp</dimen>
+    <dimen name="h1">40sp</dimen>
+    <dimen name="h2">10sp</dimen>
+    <dimen name="padding">15dp</dimen>
     <dimen name="margin">20dp</dimen>
-    <dimen name="icon">400dp</dimen>
+    <dimen name="icon">150dp</dimen>
+
 </resources>
