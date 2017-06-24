@@ -6,4 +6,15 @@
     <string name="password">password</string>
     <string name="new_register">New Register</string>
     <string name="name">name</string>
+
+    <!--For Dialog-->
+    <string name="titleHvaespace">มีช่องว่าง</string>
+    <string name="messageHaveSpace">กรุณากรอกทุกช่องด้วย นะคะ</string>
+    <string name="titleUserFalse">User False</string>
+    <string name="messageUserFalse">ไม่มี User นี่ใน ฐานข้อมูล</string>
+    <string name="titlePasswordFalse">Password Falseะ</string>
+    <string name="messagePasswordFalse">ลองใหม่ Password ผิดมาก</string>
+    <string name="title_activity_maps">Map</string>
+
+
 </resources>

@@ -3,6 +3,7 @@ package com.siam.runrana.tusaphom.mysiam;
 import android.graphics.Canvas;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -58,11 +59,35 @@ public class newregister extends AppCompatActivity {
                 }
 
                 else {
+                    //No space
+                    uploadvalueToserver();
 
                 }
 
             }
         });
+    }
+
+    private void uploadvalueToserver() {
+
+        try {
+            postDataToServer postDataToServer = new postDataToServer(newregister.this);
+            postDataToServer.execute(nameSting, userString, passwordString, "ftp://androidthai.in.th/siam/addDataMaster.php" );
+
+            if (Boolean.parseBoolean(postDataToServer.get())) {
+                finish();
+            } else {
+                Myalert myalert = new Myalert(newregister.this);
+                myalert.myDialog("Cannot upload", "Please Try Again");
+            }
+
+
+        }catch (Exception e){
+            Log.d("SiamV1", "e upload ==> " + e.toString());
+        }
+
+
+
     }
 
 
